@@ -1,0 +1,19 @@
+@import '../src/Styles/variables';
+
+html,
+body {
+  margin: 0;
+  font-family: 'Raleway-regular';
+  box-sizing: border-box;
+  color: $text-color;
+  background-color: $background-color;
+  overflow-x: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}

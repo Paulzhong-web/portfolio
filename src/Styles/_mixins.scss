@@ -1,0 +1,39 @@
+
+@mixin tablet {
+    @media screen and (min-width: 768px) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media screen and (min-width: 1440px) {
+        @content;
+    }
+}
+
+@mixin pagewrap {
+    padding: 80px 100px 0 100px;
+    min-height: 100vh;
+}
+
+@mixin label-font {
+    font-family: "Raleway-bold";
+    font-size: 14px;
+    line-height: 20px;
+    text-decoration: none;
+}
+
+@mixin title-mobile-up {
+    font-family: 'Raleway-bold';
+    font-size: 30px;
+    line-height: 38px;
+}
+
+
+
+
+
+
+
+
+
