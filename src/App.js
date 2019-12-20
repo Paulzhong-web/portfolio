@@ -1,12 +1,22 @@
-import React from 'react';
+import React, { Component } from 'react'
+import NavBar from './Components/Nav/Nav';
+import About from './Components/About/About';
+import Projects from './Components/Projects/Projects';
+import Education from './Components/Education/Education';
 import './App.scss';
 
-function App() {
-  return (
-    <div className="App">
-      <h1>test test</h1>
-    </div>
-  );
+export class App extends Component {
+  render() {
+    return (
+      <section>
+        <NavBar />
+        <About />
+        <Projects />
+        <Education />
+      </section>
+    )
+  }
 }
 
-export default App;
+export default App
+
