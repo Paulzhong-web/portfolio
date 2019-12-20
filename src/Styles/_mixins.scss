@@ -12,8 +12,18 @@
 }
 
 @mixin pagewrap {
-    padding: 80px 100px 0 100px;
+    width: 100vw;
     min-height: 100vh;
+    padding: $mobile-padding;
+    padding-top: 10vh;
+    @include tablet {
+        padding: $tablet-padding;
+        padding-top: 10vh;
+    }
+    @include desktop {
+        padding: $desktop-padding;
+        padding-top: 10vh;
+    }
 }
 
 @mixin label-font {
