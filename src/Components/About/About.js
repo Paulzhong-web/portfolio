@@ -5,7 +5,13 @@ export class About extends Component {
     render() {
         return (
             <section className="about">
-                <h1>About</h1>
+                <div className="about__wrap">
+                    <pre className="about__text">{`const Web Developer = {`}</pre>
+                    <pre className="about__text">{`name: "Paul Zhong",`}</pre>
+                    <pre className="about__text">{`location: "Toronto, Ontario",`}</pre>
+                    <pre className="about__text">{`message: "Welcome to my site."`}</pre>
+                    <pre className="about__text">{`}`}</pre>
+                </div>
             </section>
         )
     }

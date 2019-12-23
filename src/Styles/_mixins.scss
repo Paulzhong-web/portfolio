@@ -17,13 +17,14 @@
     padding: $mobile-padding;
     padding-top: 10vh;
     @include tablet {
-        padding: $tablet-padding;
-        padding-top: 10vh;
+        // padding: $tablet-padding;
+        // padding-top: 10vh;
+        padding: 0 4vw 0 16vw;
     }
-    @include desktop {
-        padding: $desktop-padding;
-        padding-top: 10vh;
-    }
+    // @include desktop {
+    //     padding: $desktop-padding;
+    //     padding-top: 10vh;
+    // }
 }
 
 @mixin label-font {

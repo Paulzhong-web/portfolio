@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import { Link } from 'react-scroll';
-// import Logo from '../../Assets/Icon/paul-logo.svg';
+import Logo from '../../Assets/Icon/paul-logo.svg';
 import './Nav.scss';
 
 export class Nav extends Component {
     render() {
         return (
             <nav className="navBar">
-                {/* <img className="navBar__logo" src={Logo} alt="logo"/> */}
+                <img className="navBar__logo" src={Logo} alt="logo"/>
                 <ul className="navBar__list">
                     <li className="navBar__list-item">
                         <Link

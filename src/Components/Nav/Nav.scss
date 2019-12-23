@@ -14,20 +14,26 @@
     background-color: $background-color;
     box-shadow: 0 2px 3px 0 rgba(0,0,0,0.1);
     @include tablet {
-        padding: $tablet-padding;
+        // padding: $tablet-padding;
+        padding: 0;
+        flex-direction: column;
+        align-items: center;
+        width: 12vw;
+        height: 100vh;
     }
-    @include desktop {
-        padding: $desktop-padding;
-    }
-
-    // &__logo {
-    //     display: none;
-    //     @include tablet {
-    //         display: inline;
-    //         width: 10vw;
-    //         height: 10vh;
-    //     }
+    // @include desktop {
+    //     padding: $desktop-padding;
+    //     padding: 0;
     // }
+
+    &__logo {
+        display: none;
+        @include tablet {
+            display: inline;
+            width: 10vw;
+            height: 10vh;
+        }
+    }
 
     &__list {
         padding: 0;
@@ -36,12 +42,26 @@
         justify-content: space-between;
         align-items: center;
         list-style: none;
+        @include tablet {
+            flex-direction: column;
+            justify-content: space-between;
+        }
+    }
+
+    &__list-item {
+        @include tablet {
+            margin: 3vh 0;
+        }
     }
 
     &__list-item-tab {
         width: 100%;
         position: relative;
         padding: 5px 0;
+        font-size: 14px;
+        @include tablet {
+            font-size: 1.5vw;
+        }
     }
 
     &__list-item-tab:before, &__list-item-tab:after {
