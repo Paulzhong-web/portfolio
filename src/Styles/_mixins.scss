@@ -15,16 +15,15 @@
     width: 100vw;
     min-height: 100vh;
     padding: $mobile-padding;
-    padding-top: 10vh;
+    padding-top: 100px;
     @include tablet {
-        // padding: $tablet-padding;
+        padding: $tablet-padding;
         // padding-top: 10vh;
-        padding: 0 4vw 0 16vw;
+        // padding: 0 4vw 0 16vw;
     }
-    // @include desktop {
-    //     padding: $desktop-padding;
-    //     padding-top: 10vh;
-    // }
+    @include desktop {
+        padding: $desktop-padding;
+    }
 }
 
 @mixin label-font {
