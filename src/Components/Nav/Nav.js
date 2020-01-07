@@ -10,7 +10,7 @@ export class Nav extends Component {
                     <li className="navBar__list-item">
                         <Link
                             className="navBar__list-item-tab"
-                            activeClass="navBar__active"
+                            // activeClass="navBar__active"
                             to="about"
                             spy={true}
                             smooth={true}
@@ -21,7 +21,7 @@ export class Nav extends Component {
                     <li className="navBar__list-item">
                         <Link
                         className="navBar__list-item-tab"
-                            activeClass="navBar__active"
+                            // activeClass="navBar__active"
                             to="projects"
                             spy={true}
                             smooth={true}
@@ -31,7 +31,7 @@ export class Nav extends Component {
                     <li className="navBar__list-item">
                         <Link
                         className="navBar__list-item-tab"
-                            activeClass="navBar__active"
+                            // activeClass="navBar__active"
                             to="education"
                             spy={true}
                             smooth={true}
@@ -41,7 +41,7 @@ export class Nav extends Component {
                     <li className="navBar__list-item">
                         <Link
                         className="navBar__list-item-tab"
-                            activeClass="navBar__active"
+                            // activeClass="navBar__active"
                             to="education"
                             spy={true}
                             smooth={true}
