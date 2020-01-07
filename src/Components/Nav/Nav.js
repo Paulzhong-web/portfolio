@@ -7,21 +7,31 @@ export class Nav extends Component {
         return (
             <nav className="navBar">
                 <ul className="navBar__list">
+                    <div className="navBar__list--wrap">
+                    <li className="navBar__list-item">
+                        <Link
+                            className="navBar__list-item-tab logo"
+                            to="hero"
+                            spy={true}
+                            smooth={true}
+                            duration={1000}
+                        >Paul Zhong</Link>
+                    </li>
                     <li className="navBar__list-item">
                         <Link
                             className="navBar__list-item-tab"
-                            // activeClass="navBar__active"
+
                             to="about"
                             spy={true}
                             smooth={true}
                             duration={1000}
                         >ABOUT</Link>
                     </li>
+                    </div>
                     <div className="navBar__list--wrap">
                     <li className="navBar__list-item">
                         <Link
                         className="navBar__list-item-tab"
-                            // activeClass="navBar__active"
                             to="projects"
                             spy={true}
                             smooth={true}
@@ -31,7 +41,6 @@ export class Nav extends Component {
                     <li className="navBar__list-item">
                         <Link
                         className="navBar__list-item-tab"
-                            // activeClass="navBar__active"
                             to="education"
                             spy={true}
                             smooth={true}
@@ -39,14 +48,10 @@ export class Nav extends Component {
                         >EDUCATION</Link>
                     </li>
                     <li className="navBar__list-item">
-                        <Link
+                        <a
                         className="navBar__list-item-tab"
-                            // activeClass="navBar__active"
-                            to="education"
-                            spy={true}
-                            smooth={true}
-                            duration={1000}
-                        >CONTACT</Link>
+                        href="mailto:paulzhong114@gmail.com"
+                        >CONTACT</a>
                     </li>
                     </div>
                 </ul>

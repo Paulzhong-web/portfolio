@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import NavBar from './Components/Nav/Nav';
+import Hero from './Components/Hero/Hero';
 import About from './Components/About/About';
 import Projects from './Components/Projects/Projects';
 import Education from './Components/Education/Education';
@@ -10,6 +11,7 @@ export class App extends Component {
     return (
       <section>
         <NavBar />
+        <Hero />
         <About />
         <Projects />
         <Education />
