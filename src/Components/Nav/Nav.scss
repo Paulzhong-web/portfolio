@@ -14,6 +14,7 @@
     background-color: $background-color;
     // box-shadow: 0 2px 3px 0 rgba(0,0,0,0.1);
     @include tablet {
+        // box-shadow: none;
         padding: $tablet-padding;
         z-index: 0;
     }
@@ -30,7 +31,7 @@
         align-items: flex-start;
         list-style: none;
         @include desktop {
-            margin: 26px 0;
+            margin: 24px 0;
         }
     }
 
@@ -69,4 +70,10 @@
 
 .logo:hover {
     color: $label-color;
+}
+
+.active {
+    color: $text-color;
+    text-decoration: underline;
+    font-weight: 900;
 }

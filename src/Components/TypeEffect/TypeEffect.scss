@@ -3,15 +3,25 @@
 
 .typeEffect {
     position: relative;
-    max-width: 500px;
+    max-width: 400px;
+    @include tablet {
+        max-width: 500px;
+    }
     @include desktop {
         max-width: 600px;
     }
 
     &__image {
         width: 100%;
-        height: auto;
+        min-height: 200px;
+        max-height: 250px;
         border-radius: 8px;
+        @include tablet {
+            min-height: 300px;
+        }
+        @include desktop {
+            min-height: 350px;
+        }
     }
 
     &__wrap {

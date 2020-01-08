@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Link } from 'react-scroll';
+import { Link, animateScroll } from 'react-scroll';
 import './Nav.scss';
 
 export class Nav extends Component {
@@ -8,7 +8,7 @@ export class Nav extends Component {
             <nav className="navBar">
                 <ul className="navBar__list">
                     <div className="navBar__list--wrap">
-                    <li className="navBar__list-item">
+                    {/* <li className="navBar__list-item">
                         <Link
                             className="navBar__list-item-tab logo"
                             to="hero"
@@ -16,11 +16,19 @@ export class Nav extends Component {
                             smooth={true}
                             duration={1000}
                         >Paul Zhong</Link>
+                    </li> */}
+                    <li className="navBar__list-item">
+                        <p 
+                            className="navBar__list-item-tab logo"
+                            onClick={() => animateScroll.scrollToTop()}
+                        >
+                            Paul Zhong
+                        </p>
                     </li>
                     <li className="navBar__list-item">
                         <Link
                             className="navBar__list-item-tab"
-
+                            activeClass="active"
                             to="about"
                             spy={true}
                             smooth={true}
@@ -32,6 +40,7 @@ export class Nav extends Component {
                     <li className="navBar__list-item">
                         <Link
                         className="navBar__list-item-tab"
+                            activeClass="active"
                             to="projects"
                             spy={true}
                             smooth={true}
@@ -41,6 +50,7 @@ export class Nav extends Component {
                     <li className="navBar__list-item">
                         <Link
                         className="navBar__list-item-tab"
+                            activeClass="active"
                             to="education"
                             spy={true}
                             smooth={true}

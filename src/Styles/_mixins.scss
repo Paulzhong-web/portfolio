@@ -11,6 +11,12 @@
     }
 }
 
+@mixin tabletText {
+    @media screen and (min-width: 500px) {
+        @content;
+    }
+}
+
 @mixin pagewrap {
     width: 100vw;
     min-height: 100vh;
