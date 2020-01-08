@@ -48,7 +48,7 @@
         }
     }
 
-    &__info--top {
+    &__info {
         padding: 10px 20px;
     }
 
@@ -67,10 +67,13 @@
     &__title {
         font-size: 18px;
         font-weight: bold;
+        margin: 14px 0;
         @include tablet {
+            margin: 16px 0;
             font-size: 22px;
         }
         @include desktop {
+            margin: 18px 0;
             font-size: 24px;
         }
     }
@@ -97,10 +100,14 @@
         width: 350px;
     }
     @include tablet {
-        width: 500px;
+        width: 600px;
         height: 200px;
         flex-wrap: nowrap;
         justify-content: space-evenly;
+    }
+    @include desktop {
+        width: 800px;
+        height: 300px;
     }
     
     &__icon {
@@ -120,11 +127,21 @@
             width: 37px;
             height: 37px;
         }
+        @include desktop {
+            width: 45px;
+            height: 45px;
+        }
     }
 
     &__text {
         font-size: 14px;
         color: $text-color;
+        @include tablet {
+            font-size: 16px;
+        }
+        @include desktop {
+            font-size: 18px;
+        }
     }
 
     &__text:hover {

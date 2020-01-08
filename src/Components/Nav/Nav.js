@@ -22,7 +22,7 @@ export class Nav extends Component {
                             className="navBar__list-item-tab logo"
                             onClick={() => animateScroll.scrollToTop()}
                         >
-                            Paul Zhong
+                            PAUL ZHONG
                         </p>
                     </li>
                     <li className="navBar__list-item">

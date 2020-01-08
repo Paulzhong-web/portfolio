@@ -15,10 +15,13 @@ const About = () => {
                         <img src={PaulPhoto} className="about__img" alt="Paul Zhong"/>
                     </div>
                     <div className="about__info--wrap">
-                        <div className="about__info--top">
+                        <div className="about__info">
                             <p className="about__info--text about__title">Hello!</p>
                             <p className="about__info--text">I am a creative web developer who leverages technical, detail-oriented and problem-solving skills to create dynamic, high-speed website optimizing user experience.</p>
                             <p className="about__info--text">I like fashion and music, and I play in a band called <span className="about__band" onClick={toggleModal}>WE ARE VARIOUS</span> .</p>
+                        </div>
+                        <div className="about__info">
+                            <p className="about__info--text about__title">Skills</p>
                         </div>
                     </div>
 
