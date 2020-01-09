@@ -51,11 +51,11 @@ export class Nav extends Component {
                         <Link
                         className="navBar__list-item-tab"
                             activeClass="active"
-                            to="education"
+                            to="skill"
                             spy={true}
                             smooth={true}
                             duration={1000}
-                        >EDUCATION</Link>
+                        >SKILLS</Link>
                     </li>
                     <li className="navBar__list-item">
                         <a

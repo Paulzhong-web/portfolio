@@ -22,13 +22,16 @@
     min-height: 100vh;
     padding: $mobile-padding;
     padding-top: 100px;
+    padding-bottom: 100px;
     @include tablet {
         padding: $tablet-padding;
         padding-top: 100px;
+        padding-bottom: 100px;
     }
     @include desktop {
         padding: $desktop-padding;
         padding-top: 120px;
+        padding-bottom: 120px;
     }
 }
 
