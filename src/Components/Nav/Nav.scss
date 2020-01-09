@@ -17,7 +17,7 @@
     @include tablet {
         // box-shadow: none;
         padding: $tablet-padding;
-        z-index: 0;
+        // z-index: 0;
     }
     @include desktop {
         padding: $desktop-padding;
@@ -60,6 +60,7 @@
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     font-size: 18px;
+    margin: 0;
     color: $text-color;
     @include tablet {
         font-size: 20px;

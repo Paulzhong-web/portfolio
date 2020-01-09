@@ -8,4 +8,12 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-  }
+    background: linear-gradient(#c9dbe9, #fff);
+    padding-bottom: 0px;
+    @include tablet {
+        padding-bottom: 0px;
+    }
+    @include desktop {
+        padding-bottom: 0px;
+    }
+}

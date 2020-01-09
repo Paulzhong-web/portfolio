@@ -36,16 +36,16 @@
 }
 
 @mixin title-font {
-    font-size: 18px;
     font-weight: bold;
-    margin: 14px 0;
+    margin: 16px 0;
+    font-size: 20px;
     @include tablet {
-        margin: 16px 0;
-        font-size: 22px;
+        margin: 18px 0;
+        font-size: 25px;
     }
     @include desktop {
-        margin: 18px 0;
-        font-size: 24px;
+        margin: 20px 0;
+        font-size: 28px;
     }
 }
 
