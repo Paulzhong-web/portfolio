@@ -133,14 +133,14 @@
 
     &__tab--ins {
         @include button;
-        background-color: #3f729b;
-        border-color: #3f729b;
+        background-color: #C13584;
+        border-color: #C13584;
         color: $background-color;
     }
 
     &__tab--ins:hover {
         background-color: $background-color;
-        color: #3f729b;
+        color: #C13584;
     }
 
     &__tab--resume {

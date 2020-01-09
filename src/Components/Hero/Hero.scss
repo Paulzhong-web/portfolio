@@ -8,7 +8,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(#c9dbe9, #fff);
     padding-bottom: 0px;
     @include tablet {
         padding-bottom: 0px;
@@ -16,4 +15,14 @@
     @include desktop {
         padding-bottom: 0px;
     }
+    background: linear-gradient( #c9dbe9, #fff);
+    background-size: 100% 200%;
+    animation: change 5s ease-in-out infinite;
 }
+
+@keyframes change {
+  0% {background-position: bottom;}
+  50% {background-position: top;}
+  100% {background-position: bottom;}
+}
+
