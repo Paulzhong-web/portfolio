@@ -22,6 +22,7 @@
         align-items: center;
         @include tabletText {
             flex-basis: 50%;
+            justify-content: center;
         }
     }
 
@@ -45,37 +46,35 @@
         }
         @include tablet {
             border-left: 1px solid $text-color;
+            align-items: flex-start;
+            justify-content: space-around;
         }
     }
 
     &__info {
         padding: 10px 20px;
+        @include tablet {
+            padding: 0 28px 10px 28px;
+        }
+        @include desktop {
+            padding: 0 50px 10px 50px;
+        }
     }
 
     &__info--text {
-        font-size: 14px;
+        font-size: $mobile-text-size;
         max-width: 300px;
         @include tablet {
-            font-size: 16px;
+            font-size: $tablet-text-size;
             max-width: 400px;
         }
         @include desktop {
-            font-size: 18px;
+            font-size: $desktop-text-size;
         }
     }
 
     &__title {
-        font-size: 18px;
-        font-weight: bold;
-        margin: 14px 0;
-        @include tablet {
-            margin: 16px 0;
-            font-size: 22px;
-        }
-        @include desktop {
-            margin: 18px 0;
-            font-size: 24px;
-        }
+        @include title-font;
     }
 
     &__band {
@@ -85,6 +84,67 @@
 
     &__band:hover {
         cursor: pointer;
+    }
+
+    &__tab {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 310px;
+        justify-content: center;
+        @include tablet {
+            max-width: 600px;
+            padding: 0 20px;
+        }
+        @include desktop {
+            padding: 0 40px;
+        }
+    }
+
+    &__tab--linkedin {
+        @include button;
+        background-color: #0E76A8;
+        border-color: #0E76A8;
+        color: $background-color;
+    }
+
+    &__tab--linkedin:hover {
+        background-color: $background-color;
+        color: #0E76A8;
+    }
+
+    &__tab--github {
+        @include button;
+        background-color: $text-color;
+        color: $background-color;
+    }
+
+    &__tab--github:hover {
+        background-color: $background-color;
+        color: $text-color;
+    }
+
+    &__tab--ins {
+        @include button;
+        background-color: #3f729b;
+        border-color: #3f729b;
+        color: $background-color;
+    }
+
+    &__tab--ins:hover {
+        background-color: $background-color;
+        color: #3f729b;
+    }
+
+    &__tab--resume {
+        @include button;
+        background-color: $label-color;
+        border-color: $label-color;
+        color: $background-color;
+    }
+
+    &__tab--resume:hover {
+        background-color: $background-color;
+        color: $label-color;
     }
 }
 
@@ -134,13 +194,13 @@
     }
 
     &__text {
-        font-size: 14px;
+        font-size: $mobile-text-size;
         color: $text-color;
         @include tablet {
-            font-size: 16px;
+            font-size: $tablet-text-size;
         }
         @include desktop {
-            font-size: 18px;
+            font-size: $desktop-text-size;
         }
     }
 

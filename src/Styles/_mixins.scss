@@ -32,19 +32,36 @@
     }
 }
 
-@mixin label-font {
-    font-family: "Raleway-bold";
-    font-size: 14px;
-    line-height: 20px;
+@mixin title-font {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 14px 0;
+    @include tablet {
+        margin: 16px 0;
+        font-size: 22px;
+    }
+    @include desktop {
+        margin: 18px 0;
+        font-size: 24px;
+    }
+}
+
+@mixin button {
+    margin: 8px;
     text-decoration: none;
+    width: 100px;
+    border: 1px solid $text-color;
+    border-radius: 3px;
+    padding: 8px 0;
+    text-align: center;
+    font-size: $mobile-text-size;
+    @include tablet {
+        width: 80px;
+    }
+    @include desktop {
+        width: 100px;
+    }
 }
-
-@mixin title-mobile-up {
-    font-family: 'Raleway-bold';
-    font-size: 30px;
-    line-height: 38px;
-}
-
 
 
 
