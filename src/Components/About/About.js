@@ -23,10 +23,10 @@ const About = () => {
                             <p className="about__info--text">I like fashion and music, and I play in a band called <span className="about__band" onClick={toggleModal}>WE ARE VARIOUS</span> .</p>
                         </div>
                         <div className="about__tab">
+                            <a className="about__tab--resume" href={Resume} target="_blank" rel="noopener noreferrer">Resume</a>
                             <a className="about__tab--linkedin" href="https://www.linkedin.com/in/wenjian-paul-zhong/" target="_blank" rel="noopener noreferrer">Linkedin</a>
                             <a className="about__tab--github" href="https://github.com/Paulzhong-web" target="_blank" rel="noopener noreferrer">Github</a>
                             <a className="about__tab--ins" href="https://www.instagram.com/paul_wav/" target="_blank" rel="noopener noreferrer">Instagram</a>
-                            <a className="about__tab--resume" href={Resume} target="_blank" rel="noopener noreferrer">Resume</a>
                         </div>
                     </div>
                 </div>

@@ -3,4 +3,28 @@
 
 .skill {
     @include pagewrap;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 0;
+    @include tablet {
+        flex-direction: row;
+    }
+
+    &__img {
+        width: 60px;
+        height: 60px;
+        margin: 10px;
+        @include tablet {
+            width: 70px;
+            height: 70px;
+            margin: 2vh 2vw;
+        }
+        @include desktop {
+            width: 100px;
+            height: 100px;
+            margin: 3vh 3vw;
+        }
+    }
 }

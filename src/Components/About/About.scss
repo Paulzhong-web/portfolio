@@ -102,6 +102,7 @@
         @include tablet {
             max-width: 600px;
             padding: 0 20px;
+            justify-content: flex-start;
         }
         @include desktop {
             padding: 0 40px;
