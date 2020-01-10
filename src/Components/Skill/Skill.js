@@ -24,7 +24,7 @@ export const Skill = () => {
         ]);
         
         useEffect(() => {
-            setTimeout(() => setSvgs(shuffle(svgs)), 8000);
+            setTimeout(() => setSvgs(shuffle(svgs)), 3000);
         }, [svgs]);
 
         return (

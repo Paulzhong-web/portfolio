@@ -10,7 +10,11 @@
     padding-bottom: 0;
     @include tablet {
         flex-direction: row;
+        // justify-content: space-between;
     }
+    // @include tablet {
+    //     justify-content: space-between;
+    // }
 
     &__img {
         width: 60px;
