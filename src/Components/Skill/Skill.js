@@ -9,7 +9,6 @@ import ReactSvg from '../../Assets/Icon/react.svg';
 import JavacriptSvg from '../../Assets/Icon/javascript.svg';
 import NodeSvg from '../../Assets/Icon/nodejs.svg';
 import ExpressSvg from '../../Assets/Icon/express.svg';
-
 import './Skill.scss';
 
 const spring = {
@@ -24,7 +23,7 @@ export const Skill = () => {
         ]);
         
         useEffect(() => {
-            setTimeout(() => setSvgs(shuffle(svgs)), 3000);
+            setTimeout(() => setSvgs(shuffle(svgs)), 2000);
         }, [svgs]);
 
         return (

@@ -4,7 +4,7 @@ import JumpingText from '../JumpingText/JumpingText';
 import PaulPhoto from '../../Assets/Icon/paulzhong.png';
 import BandInfo from '../../Data/BandInfo.js';
 import Resume from '../../Assets/Paulzhong-resume.pdf';
-import './modal.css';
+import './modal.scss';
 import './About.scss';
 
 const About = () => {
