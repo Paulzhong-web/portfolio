@@ -61,8 +61,12 @@
         @media (min-width: 640px) {
             font-size: $tablet-text-size;
             line-height: 1.5;
+            min-height: 200px;
             padding: 0 2vw;
             margin-bottom: 25px;
+        }
+        @include desktop {
+            min-height: 192px;
         }
     }
 
