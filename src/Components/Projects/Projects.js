@@ -6,8 +6,12 @@ export class Projects extends Component {
     render() {
         return (
             <section className="projects">
-                {/* <h1>projects</h1> */}
-                <ProjectContent />
+                <div className="projects__wrap">
+                    <ProjectContent />
+                </div>
+                <div className="projects__wrap">
+                    <ProjectContent />
+                </div>
             </section>
         )
     }

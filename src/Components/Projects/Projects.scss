@@ -1,7 +1,13 @@
 @import '../../Styles/variables';
 @import "../../Styles/mixins";
 
-
 // .projects {
 //     @include pagewrap;
 // }
+
+.projects__wrap {
+    @include pagewrap;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
