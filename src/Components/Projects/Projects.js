@@ -9,9 +9,6 @@ export class Projects extends Component {
                 <div className="projects__wrap">
                     <ProjectContent />
                 </div>
-                <div className="projects__wrap">
-                    <ProjectContent />
-                </div>
             </section>
         )
     }

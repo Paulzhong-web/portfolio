@@ -5,6 +5,7 @@ import './ProjectContent.scss';
 export class ProjectContent extends Component {
     render() {
         return (
+            <div className="content--control">
             <div className="content">
                 <p className="content__title">WE ARE VARIOUS</p>
                 <div className="content__wrap">
@@ -18,6 +19,7 @@ export class ProjectContent extends Component {
                 <div className="content__img--wrap">
                     <img className="content__img" src={wavSite} alt="website screenshot"/>
                 </div>   
+            </div>
             </div>
         )
     }
