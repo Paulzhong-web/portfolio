@@ -7,9 +7,6 @@ export class Projects extends Component {
     render() {
         return (
             <section className="projects">
-                {/* <div className="projects__wrap">
-                    <ProjectContent />
-                </div> */}
                 {
                     ProjectsInfo.map((item, i) => {
                         return (

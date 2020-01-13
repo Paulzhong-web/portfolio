@@ -11,7 +11,7 @@ export class ProjectContent extends Component {
                 <div className="content__wrap">
                     <p className="content__paragraph">{description}</p>
                     <div className="content__link--wrap">
-                       <a className="content__link" href={websiteUrl} target="_blank" rel="noopener noreferrer">Live Sites</a> 
+                       <a className="content__link" href={websiteUrl} target="_blank" rel="noopener noreferrer">Live Site</a> 
                        <a className="content__link content__github" href={githubUrl} target="_blank" rel="noopener noreferrer">GitHub</a> 
                     </div> 
                 </div>

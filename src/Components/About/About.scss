@@ -70,13 +70,16 @@
 
     &__info--text {
         font-size: $mobile-text-size;
+        line-height: 1.5;
         max-width: 300px;
         @include tablet {
             font-size: $tablet-text-size;
+            line-height: 1.5;
             max-width: 400px;
         }
         @include desktop {
             font-size: $desktop-text-size;
+            line-height: 1.5;
         }
     }
 
