@@ -54,13 +54,10 @@
     }
 
     &__paragraph {
-        font-size: $mobile-text-size;
-        line-height: 1.5;
+        @include text-spec;
         color: $text-color;
         margin-bottom: 20px;
         @media (min-width: 640px) {
-            font-size: $tablet-text-size;
-            line-height: 1.5;
             min-height: 200px;
             padding: 0 2vw;
             margin-bottom: 25px;
@@ -82,11 +79,7 @@
 
     &__link {
         @include button;
-        font-family: "Raleway-regular";
         margin-left: 0;
-        // background-color: $label-color;
-        // border-color: $label-color;
-        // color: $background-color;
         color: $text-color;
         border-color: $text-color;
         @media (min-width: 640px) {
@@ -96,8 +89,6 @@
     }
 
     &__link:hover {
-        // background-color: $background-color;
-        // color: $label-color;
         background-color: $text-color;
         color: $background-color;
     }

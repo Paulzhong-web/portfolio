@@ -12,12 +12,10 @@
     height: 100px;
     padding: $mobile-padding;
     background-color: $background-color;
-    font-family: "Raleway-regular";
     // box-shadow: 0 2px 3px 0 rgba(0,0,0,0.1);
     @include tablet {
         // box-shadow: none;
         padding: $tablet-padding;
-        // z-index: 0;
     }
     @include desktop {
         padding: $desktop-padding;
@@ -47,7 +45,11 @@
         color: $label-color;
         width: 100%;
         font-size: 14px;
+        letter-spacing: 0.5px;
         text-decoration: none;
+        @include tablet {
+            letter-spacing: 1px;
+        }
     }
 
     &__list-item-tab:hover {
@@ -60,6 +62,7 @@
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     font-size: 18px;
+    letter-spacing: 0.5px;
     margin: 0;
     color: $text-color;
     @include tablet {
@@ -77,5 +80,4 @@
 .active {
     color: $text-color;
     text-decoration: underline;
-    font-weight: 900;
 }

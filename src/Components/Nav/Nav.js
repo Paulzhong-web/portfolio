@@ -8,15 +8,6 @@ export class Nav extends Component {
             <nav className="navBar">
                 <ul className="navBar__list">
                     <div className="navBar__list--wrap">
-                    {/* <li className="navBar__list-item">
-                        <Link
-                            className="navBar__list-item-tab logo"
-                            to="hero"
-                            spy={true}
-                            smooth={true}
-                            duration={1000}
-                        >Paul Zhong</Link>
-                    </li> */}
                     <li className="navBar__list-item">
                         <p 
                             className="navBar__list-item-tab logo"

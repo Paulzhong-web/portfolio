@@ -49,13 +49,27 @@
     }
 }
 
+@mixin text-spec {
+    font-size: $mobile-text-size;
+    line-height: 1.4;
+    letter-spacing: 0.5px;
+        @include tablet {
+            font-size: $tablet-text-size;
+            line-height: 1.4;
+            letter-spacing: 1px;
+        }
+        @include desktop {
+            font-size: $desktop-text-size;
+        }
+}
+
 @mixin project-title {
-    font-family: "Montserrat-Light";
-    font-weight: bold;
     margin: 20px 0;
     font-size: 20px;
+    letter-spacing: 0.5px;
     @media (min-width: 640px) {
         margin: 25px 0;
+        letter-spacing: 1px;
         font-size: 25px;
     }
 }
@@ -64,6 +78,7 @@
     margin: 8px;
     text-decoration: none;
     width: 100px;
+    letter-spacing: 0.5px;
     border: 1px solid $text-color;
     border-radius: 3px;
     padding: 8px 0;

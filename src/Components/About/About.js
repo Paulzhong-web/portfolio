@@ -20,7 +20,7 @@ const About = () => {
                         <div className="about__info">
                             <JumpingText />
                             <p className="about__info--text">I am a creative web developer who leverages technical, detail-oriented and problem-solving skills to create dynamic, high-speed website optimizing user experience.</p>
-                            <p className="about__info--text">I like fashion and music, and I play in a band called <span className="about__band" onClick={toggleModal}>WE ARE VARIOUS</span> .</p>
+                            <p className="about__info--text">I like fashion and music, and I play in a band called WE ARE VARIOUS. <span className="about__band" onClick={toggleModal}>{`(Click here)`}</span></p>
                         </div>
                         <div className="about__tab">
                             <a className="about__tab--resume" href={Resume} target="_blank" rel="noopener noreferrer">Resume</a>

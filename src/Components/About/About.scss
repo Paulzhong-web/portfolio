@@ -52,7 +52,7 @@
             flex-basis: 50%;
         }
         @include tablet {
-            border-left: 1px solid $text-color;
+            border-left: 1px solid #999999;
             align-items: flex-start;
             justify-content: space-around;
         }
@@ -69,17 +69,11 @@
     }
 
     &__info--text {
-        font-size: $mobile-text-size;
-        line-height: 1.5;
+        @include text-spec;
         max-width: 300px;
+        color: $text-color;
         @include tablet {
-            font-size: $tablet-text-size;
-            line-height: 1.5;
             max-width: 400px;
-        }
-        @include desktop {
-            font-size: $desktop-text-size;
-            line-height: 1.5;
         }
     }
 
@@ -101,7 +95,6 @@
         flex-wrap: wrap;
         max-width: 310px;
         justify-content: center;
-        font-family: "Raleway-regular";
         @include tablet {
             max-width: 600px;
             padding: 0 20px;

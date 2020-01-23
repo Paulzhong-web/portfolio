@@ -4,7 +4,7 @@ import testImg from '../Assets/Icon/command-line.png';
 export default [
     {
         name: "WE ARE VARIOUS",
-        description: "On on produce colonel pointed. Just four sold need over how any. In to september suspicion determine he prevailed admitting. On adapted an as affixed limited on. Giving cousin warmly things no spring mr be abroad. Relation breeding be as repeated strictly followed margaret. One gravity son brought shyness waiting regular led ham.",
+        description: "This is a website designed and built for my band - WE ARE VARIOUS, which showcases the band's contends to its fans and audiences. It helps the band to show its unique style and identity, get people to sign up their email for updates and connect the fans together. (Mobile and Tablet version coming soon)",
         image: wavSite,
         websiteUrl: "http://www.wearevariousband.com/",
         githubUrl: "http://www.wearevariousband.com/"
