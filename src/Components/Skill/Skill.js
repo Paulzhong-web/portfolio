@@ -34,6 +34,7 @@ export const Skill = () => {
                         key={item}
                         src={item}
                         layoutTransition={spring}
+                        alt="skills-logo"
                         className="skill__img"
                     />
                     )
